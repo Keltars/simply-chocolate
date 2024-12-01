@@ -1,0 +1,450 @@
+/** GENERAL */
+* {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+
+body {
+ font-family: 'Montserrat', sans-serif;
+ background-color: rgb(233, 233, 233);
+}
+
+img {
+ display: block;
+}
+
+a {
+ text-decoration: none;
+}
+
+ul {
+ list-style: none;
+}
+
+.visually-hidden {
+ position: absolute;
+ width: 1px;
+ height: 1px;
+ margin: -1px;
+ border: 0;
+ padding: 0;
+
+ white-space: nowrap;
+ clip-path: inset(100%);
+ clip: rect(0 0 0 0);
+ overflow: hidden;
+}
+
+.section-title {
+ color: rgb(17, 17, 17);
+ font-size: 24px;
+ font-weight: 600;
+ line-height: 1.17;
+ letter-spacing: -0.03em;
+ text-transform: uppercase;
+ text-align: center;
+}
+
+.section-title span {
+ color: rgb(253, 146, 34);
+}
+
+/** HEADER */
+.header {
+}
+
+.header-nav {
+}
+
+.header-logo {
+ color: rgb(17, 17, 17);
+ font-size: 18px;
+ font-weight: 700;
+ line-height: 1.11;
+ /* line-height = line-height(px)/font-size */
+ letter-spacing: -0.03em;
+ /* letter-spacing = letter-spacing/font-size */
+ display: flex;
+}
+
+.header-logo-span {
+ font-style: italic;
+}
+
+.header-logo:hover .header-logo-span {
+ color: rgb(253, 146, 34);
+}
+
+.header-logo-img {
+}
+
+.header-nav-list {
+}
+
+.header-nav-item {
+}
+
+.header-nav-link {
+ color: rgb(17, 17, 17);
+ font-size: 14px;
+ font-weight: 500;
+ line-height: 1.14;
+ letter-spacing: -0.02em;
+}
+
+.header-nav-link:hover,
+.header-nav-link:focus {
+ color: rgb(253, 146, 34);
+}
+
+.header-soc-list {
+}
+
+.header-soc-item {
+}
+
+.header-soc-link {
+}
+
+.main {
+}
+
+/** HERO */
+.hero {
+ background-color: rgba(17, 17, 17, 0.6);
+}
+
+.hero-title {
+ color: rgb(255, 255, 255);
+ font-size: 28px;
+ font-weight: 500;
+ line-height: 1.21;
+ letter-spacing: -0.03em;
+}
+
+.hero-buy-btn {
+ color: rgb(255, 255, 255);
+ font-family: inherit;
+ font-size: 14px;
+ font-weight: 600;
+ line-height: 1.21;
+ line-height: normal;
+
+ cursor: pointer;
+ border: none;
+ border-radius: 100px;
+ background: rgb(253, 146, 34);
+ padding: 14px 40px 14px 40px;
+}
+
+.hero-buy-btn:hover {
+ color: rgb(253, 146, 34);
+ background-color: rgb(252, 241, 224);
+}
+
+.hero-made-btn {
+ color: rgb(255, 255, 255);
+ font-size: 14px;
+ font-weight: 600;
+ line-height: normal;
+
+ padding: 14px 40px 14px 40px;
+ border: 1px solid rgb(255, 255, 255);
+ border-radius: 100px;
+}
+
+.hero-down-btn {
+ color: rgb(255, 255, 255);
+ font-size: 14px;
+ font-weight: 500;
+ line-height: 1.29;
+ letter-spacing: -0.03em;
+}
+
+/** FEATURES */
+
+.features {
+ background-color: rgb(30, 24, 35);
+}
+
+.features-list {
+}
+
+.features-item {
+}
+
+.features-item-title {
+ color: rgb(255, 255, 255);
+ font-size: 18px;
+ font-weight: 600;
+ line-height: 1.22;
+}
+
+.features-item-text {
+ color: rgba(255, 255, 255, 0.7);
+ font-size: 14px;
+ /* font-weight: 400; */
+ /** DEFAULT WEIGHT 400 */
+ line-height: 1.29;
+ letter-spacing: -0.02em;
+}
+
+/** TASTE */
+
+.taste {
+}
+
+.taste-title {
+}
+
+.taste-text {
+ color: rgb(17, 17, 17);
+ font-size: 14px;
+ line-height: 1.29;
+ letter-spacing: -0.02em;
+ text-align: center;
+}
+
+.taste-list {
+}
+
+.taste-item {
+}
+
+.taste-img {
+}
+
+.taste-subtitle {
+ color: rgb(17, 17, 17);
+ font-size: 14px;
+ font-weight: 600;
+ line-height: 1.29;
+ letter-spacing: -0.02em;
+}
+
+/** MADE */
+
+.made {
+}
+
+.made-title {
+}
+
+.made-img {
+}
+
+.made-subtitle {
+ color: rgb(17, 17, 17);
+ font-size: 18px;
+ font-weight: 600;
+ line-height: 1.33;
+ text-align: left;
+}
+
+.made-list {
+}
+
+.made-item {
+}
+
+.made-text {
+ color: rgb(17, 17, 17);
+ font-size: 14px;
+ line-height: 1.29;
+ letter-spacing: -0.02em;
+ text-align: left;
+}
+
+/** PRODUCTS */
+
+.products {
+}
+
+.products-title {
+}
+
+.products-list {
+}
+
+.products-item {
+}
+
+.products-img {
+}
+
+.products-subtitle {
+ color: rgb(17, 17, 17);
+ font-size: 18px;
+ font-weight: 600;
+ line-height: 1.33;
+ letter-spacing: -0.02em;
+ text-align: left;
+ text-transform: uppercase;
+}
+
+.products-text {
+ color: rgba(17, 17, 17, 0.7);
+ font-size: 12px;
+ line-height: 1.17;
+ letter-spacing: -0.02em;
+ text-align: left;
+}
+
+.products-btn {
+ color: rgb(17, 17, 17);
+ font-family: inherit;
+ font-size: 14px;
+ font-weight: 600;
+ line-height: 1.21;
+
+ border: 1px solid rgba(17, 17, 17, 0.1);
+ border-radius: 100px;
+ background-color: rgb(250, 250, 250);
+ padding: 8px 20px 8px 20px;
+ cursor: pointer;
+}
+
+/** SELLERS */
+
+.sellers {
+}
+
+.sellers-title {
+}
+
+.sellers-list {
+}
+
+.sellers-item {
+}
+
+.sellers-img {
+}
+
+.sellers-subtitle {
+ color: rgb(17, 17, 17);
+ font-size: 18px;
+ font-weight: 600;
+ line-height: 1.33;
+ letter-spacing: -0.02em;
+ text-align: left;
+ text-transform: uppercase;
+}
+
+/** REVIEWS */
+
+.reviews {
+}
+
+.reviews-title {
+}
+
+.reviews-list {
+}
+
+.reviews-item {
+}
+
+.reviews-img {
+}
+
+.reviews-subtitle {
+ color: rgb(17, 17, 17);
+ font-size: 18px;
+ font-weight: 600;
+ line-height: 1.33;
+ text-align: center;
+}
+
+.reviews-text {
+ color: rgba(17, 17, 17, 0.7);
+ font-size: 14px;
+ line-height: 1.29;
+ letter-spacing: -0.02em;
+ text-align: center;
+}
+
+.reviews-btn {
+ color: rgb(17, 17, 17);
+ font-size: 18px;
+ font-weight: 600;
+ line-height: 1.22;
+ text-align: left;
+
+ padding: 14px 40px 14px 40px;
+ border: 1px solid rgb(253, 146, 34);
+ border-radius: 100px;
+ cursor: pointer;
+}
+
+/** FOOTER */
+
+.footer {
+ background-color: rgb(30, 24, 35);
+}
+
+.footer-title {
+ color: rgb(255, 255, 255);
+ font-size: 28px;
+ font-weight: 500;
+ line-height: 1.21;
+ letter-spacing: -0.02em;
+ text-align: left;
+ text-transform: none;
+}
+
+.footer-subtitle {
+ color: rgb(255, 255, 255);
+ text-align: center;
+ font-size: 14px;
+ font-weight: 500;
+ line-height: 1.29;
+ text-align: center;
+}
+
+.footer-soc-list {
+}
+
+.footer-soc-item {
+}
+
+.footer-soc-link {
+}
+
+.footer-address-list {
+}
+
+.footer-address-item {
+}
+
+.footer-address-link {
+ color: rgb(255, 255, 255);
+ font-style: normal;
+ font-size: 14px;
+ line-height: 1.29;
+ letter-spacing: -0.02em;
+ text-align: center;
+}
+
+.footer-nav {
+}
+
+.footer-nav-list {
+}
+
+.footer-nav-item {
+}
+
+.footer-nav-link {
+ color: rgb(255, 255, 255);
+ font-size: 14px;
+ font-weight: 500;
+ line-height: 1.14;
+ letter-spacing: -0.02em;
+}
+
+.footer-nav-link:hover,
+.footer-nav-link:focus {
+ color: rgb(253, 146, 34);
+}
