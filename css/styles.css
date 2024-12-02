@@ -234,6 +234,17 @@ button {
  letter-spacing: -0.03em;
  text-transform: lowercase;
  margin-left: auto;
+ display: flex;
+ align-items: center;
+ gap: 14px;
+}
+
+.hero-down-btn:hover {
+ color: rgb(253, 146, 34);
+ stroke: rgb(253, 146, 34);
+}
+
+.icon-hero-scroll-arr {
 }
 
 /** FEATURES */
@@ -253,6 +264,21 @@ button {
 
 .features-item {
  width: calc((100% - 88px * 2) / 3);
+}
+
+.features-icon-border {
+ width: 62px;
+ height: 62px;
+ border: 1px solid rgba(255, 255, 255, 0.5);
+ border-radius: 50%;
+ margin-bottom: 19px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.features-icon {
+ fill: transparent;
 }
 
 .features-item-title {
@@ -481,7 +507,7 @@ button {
 }
 
 .reviews-title {
- margin-bottom: 50px;
+ margin-bottom: 91px;
 }
 
 .reviews-list {
@@ -498,6 +524,10 @@ button {
 }
 
 .reviews-img {
+ position: relative;
+ bottom: 38px;
+ left: 140px;
+ border-radius: 50%;
 }
 
 .reviews-subtitle {
