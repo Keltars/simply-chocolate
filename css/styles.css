@@ -1,5 +1,16 @@
 /** GENERAL */
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+ margin-top: 0;
+ margin-bottom: 0;
+}
+
 body {
  font-family: 'Montserrat', sans-serif;
  background-color: rgb(233, 233, 233);
@@ -126,8 +137,6 @@ button {
 
 .header-soc-list {
  display: flex;
- justify-content: flex-start;
- align-items: center;
  gap: 14px;
 }
 
@@ -324,7 +333,6 @@ button {
 }
 
 .taste-item {
- border: 1px solid rgb(253, 146, 34);
  border-radius: 15px;
  width: calc((100% - 32px * 3) / 4);
  padding: 28px 23px;
@@ -335,6 +343,7 @@ button {
 }
 
 .taste-item:nth-child(even) {
+ border: 1px solid rgb(253, 146, 34);
  background-color: rgba(255, 255, 255, 1);
 }
 
@@ -376,6 +385,7 @@ button {
 }
 
 .made-img {
+ border-radius: 15px;
 }
 
 .made-content {
@@ -424,7 +434,7 @@ button {
 .products-list {
  display: flex;
  flex-wrap: wrap;
- gap: 24px 18px;
+ gap: 20px 18px;
 }
 
 .products-item {
@@ -450,7 +460,6 @@ button {
  line-height: 1.33;
  letter-spacing: -0.02em;
  text-transform: uppercase;
- margin-bottom: 2px;
 }
 
 .products-text {
@@ -501,6 +510,7 @@ button {
 }
 
 .sellers-subtitle {
+ padding: 28px 0px;
  color: rgb(17, 17, 17);
  font-size: 18px;
  font-weight: 600;
@@ -508,7 +518,6 @@ button {
  letter-spacing: -0.02em;
  text-align: center;
  text-transform: uppercase;
- padding: 28px 0px;
 }
 
 /** REVIEWS */
@@ -529,25 +538,32 @@ button {
 }
 
 .reviews-item {
+ position: relative;
  border-radius: 15px;
  box-shadow: 0px 9.05px 100px 0px rgba(17, 17, 17, 0.03);
- background-color: rgb(255, 255, 255);
+ background-color: #fff;
  width: calc((100% - 56px) / 3);
+ padding: 56px 20px 24px;
+ text-align: center;
 }
 
 .reviews-img {
- position: relative;
- bottom: 38px;
- left: 140px;
+ position: absolute;
+ top: -40px;
+ left: 50%;
  border-radius: 50%;
+ transform: translateX(-50%);
+ width: 80px;
+ height: 80px;
 }
 
 .reviews-subtitle {
- color: rgb(17, 17, 17);
+ margin-top: 0;
+ margin-bottom: 24px;
+ color: #111;
  font-size: 18px;
  font-weight: 600;
  line-height: 1.33;
- text-align: center;
 }
 
 .reviews-text {
@@ -555,8 +571,6 @@ button {
  font-size: 14px;
  line-height: 1.29;
  letter-spacing: -0.02em;
- text-align: center;
- padding: 24px;
 }
 
 .reviews-btn {
@@ -593,7 +607,7 @@ button {
  width: 100%;
  flex-grow: 1;
  justify-content: space-between;
- margin-bottom: 74px;
+ margin-bottom: 72px;
 }
 
 .footer-wrap {
@@ -629,8 +643,8 @@ button {
 
 .footer-soc-list {
  display: flex;
- justify-content: space-between;
- gap: 14px;
+ justify-content: flex-start;
+ gap: 13px;
 }
 
 .footer-soc-item {
@@ -666,6 +680,14 @@ button {
 
 .footer-address-link:hover {
  color: rgb(253, 146, 34);
+}
+
+.footer-line {
+ position: relative;
+ top: -23.5px;
+ height: 0;
+ max-width: 100%;
+ border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer-down {
